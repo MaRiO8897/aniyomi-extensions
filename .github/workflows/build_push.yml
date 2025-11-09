@@ -218,3 +218,16 @@ jobs:
       - name: Purge cached index on jsDelivr
         run: |
           curl https://purge.jsdelivr.net/gh/yuzono/anime-repo@repo/index.min.json
+
+  build_mycima:
+    name: Build MyCima only
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up JDK 17
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin'
+          java-version: 17
+      - name: Build MyCima
+        run: ./gradlew :arabic:mycima:assembleRelease
