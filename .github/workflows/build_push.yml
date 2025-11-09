@@ -230,5 +230,5 @@ jobs:
           distribution: 'temurin'
           java-version: 17
       - name: Build MyCima
-        run: ./gradlew :ar:mycima:src:eu:kanade:tachiyomi:animeextension:ar:mycima
+        run: ./gradlew :src:ar:mycima:src:eu:kanade:tachiyomi:animeextension:ar:mycima
 
