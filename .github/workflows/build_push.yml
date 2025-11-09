@@ -230,4 +230,4 @@ jobs:
           distribution: 'temurin'
           java-version: 17
       - name: Build MyCima
-        run: ./gradlew :arabic:mycima:assembleRelease
+        run: ./gradlew :arabic:MyCima:assembleRelease
